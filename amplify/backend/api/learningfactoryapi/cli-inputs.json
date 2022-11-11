@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/name": {
+      "name": "/name",
+      "lambdaFunction": "learningfactoryapib8aced90",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
