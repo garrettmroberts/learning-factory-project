@@ -9,9 +9,9 @@ function App() {
     lastName: ''
   })
   const getUser = async () => {
-    const user = await axios.get('/name', {
-      firstName: 'firstName',
-      lastName: 'lastName'
+    const user = await axios.get('https://sm72yw5kid.execute-api.us-east-1.amazonaws.com/dev/name', {
+      firstName: 'Go',
+      lastName: 'Gol'
     })
 
     setUsername({

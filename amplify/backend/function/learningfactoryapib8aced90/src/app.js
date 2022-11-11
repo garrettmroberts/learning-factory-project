@@ -29,10 +29,9 @@ app.use(function(req, res, next) {
 /**********************
  * Example get method *
  **********************/
-
-app.get('/name', function(req, res) {
+app.post('/name', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed!', url: req.url, body: {firstName: req.firstName, lastName: req.lastName}});
+  res.json({success: 'get call succeed!', url: req.url, body: {firstName: req.body.firstName, lastName: req.body.lastName}});
 });
 
 app.get('/name/*', function(req, res) {

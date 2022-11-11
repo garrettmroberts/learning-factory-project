@@ -15,11 +15,17 @@
       "function": {
         "learningfactoryapib8aced90": {
           "deploymentBucketName": "amplify-learningfactoryapi-dev-110625-deployment",
-          "s3Key": "amplify-builds/learningfactoryapib8aced90-37726337674d4c724732-build.zip"
+          "s3Key": "amplify-builds/learningfactoryapib8aced90-3554346a79436368566f-build.zip"
         }
       },
       "api": {
         "learningfactoryapi": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1f465uv0chcx6",
+          "type": "manual"
+        }
       }
     }
   }
