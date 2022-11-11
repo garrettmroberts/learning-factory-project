@@ -15,7 +15,7 @@
       "function": {
         "learningfactoryapib8aced90": {
           "deploymentBucketName": "amplify-learningfactoryapi-dev-110625-deployment",
-          "s3Key": "amplify-builds/learningfactoryapib8aced90-3554346a79436368566f-build.zip"
+          "s3Key": "amplify-builds/learningfactoryapib8aced90-6a725646527434494f38-build.zip"
         }
       },
       "api": {

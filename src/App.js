@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
@@ -8,17 +8,29 @@ function App() {
     firstName: '',
     lastName: ''
   })
+
   const getUser = async () => {
     const user = await axios.post('https://sm72yw5kid.execute-api.us-east-1.amazonaws.com/dev/name', {
       firstName: 'Go',
       lastName: 'Gol'
     })
 
-    setUsername({
-      firstName: user.data.firstName,
-      lastName: user.data.lastName
-    })
+   return user;
   }
+
+  useEffect(() => {
+    const asyncFunc = async () => {
+      const user = await axios.post('https://sm72yw5kid.execute-api.us-east-1.amazonaws.com/dev/name', {
+        firstName: 'Go',
+        lastName: 'Gol'
+      })
+      setUsername({
+        firstName: user.data.body.firstName,
+        lastName: user.data.body.lastName
+      })
+    }
+    asyncFunc();
+  })
   return (
     <div className="App">
       <header className="App-header">
